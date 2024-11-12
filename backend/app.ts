@@ -12,7 +12,7 @@ app.use(express.json());
 connectDB();
 
 app.use("/api/users", userRoutes);
-app.use("api/leaves",leaveRoutes);
+app.use("/api/leaves",leaveRoutes);
 
 app.get("/", async (req: Request, res: Response) => {
   try {

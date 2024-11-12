@@ -22,5 +22,4 @@ const leaveSchema: Schema = new Schema({
   noOfDays: Number,
 });
 
-
-export default mongoose.model<Leave>("Leaves",leaveSchema);
+export default mongoose.model<Leave>("Leave", leaveSchema);

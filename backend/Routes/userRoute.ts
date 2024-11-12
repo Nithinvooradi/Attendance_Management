@@ -10,8 +10,8 @@ import { authMiddleware } from "../middleware/authMiddleware";
 const router = express.Router();
 
 router.post("/add", addUser);
-router.post("/login",loginUser);
-router.post("/reset-password",authMiddleware,resetPassword);
+router.post("/login",loginUser as any);
+router.post("/reset-password",authMiddleware as any,resetPassword);
 // router.get("/employees", getEmployees);
 // router.get("/learners", getLearners);
 
